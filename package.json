@@ -1,0 +1,29 @@
+{
+  "name": "apicloud-tpl",
+  "version": "0.0.1",
+  "description": "apicloud template",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "lessc -x src/index.less ../../workspace/demo/index.css && node build/index.js",
+    "build:js": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "keywords": [
+    "apicloud"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.14.0",
+    "cross-env": "^3.0.0",
+    "file-loader": "^0.9.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "vue": "^1.0.27"
+  },
+  "author": "mennghao",
+  "license": "MIT"
+}

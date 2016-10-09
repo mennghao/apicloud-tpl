@@ -1,0 +1,4 @@
+{
+	"home/pages/a": "./src/html/home/pages/a/index.less",
+	"home": "./src/html/home/index.less",
+}
